@@ -1,0 +1,55 @@
+---
+title: ''
+output: html_document
+---
+<br>
+
+### Experience 
+
+### Current
+
+- Emma is a senior Statistical and Data Sciences major at Smith College. After her graduation in May 2020, she will join MassMutual's Data Science Development Program in Amherst, MA. 
+- At school Emma is a Stats TA and Data Assistant through the [Spinelli Center for Quantitative Learning](https://www.smith.edu/qlc/index.html).
+- She is the co-author and maintainer of the `readUCI` R package.
+
+<br>
+
+### Past
+
+#### The Modellers/Hall & Partners: Marketing Science Intern
+##### Summer 2019, Salt Lake City, Utah
+- Ran complex statistical analyses such as discrete choice models and market segmentations and analyzed results.
+- Communicated results of analyses with project leaders and clients.
+- Analyzed and manipulated large datasets using a combination of R, Excel, and SPSS.
+- Designed a comprehensive training for future interns based on common tasks. 
+ 
+
+#### The People's Agenda: Data Analysis and Visualization Intern
+##### Summer 2018, Champaign, Illinois
+- Acquired, tidied and analyzed ten years of election data from Champaign County. 
+- Created interactive maps and other visualizations used to optimize campaign resources and prioritize canvassing strategies. 
+
+
+<br>
+
+### Education
+#### Smith College
+##### Sept. 2016 - May 2020, Northampton, Massachusetts
+Bachelor of Arts, Statistical and Data Sciences
+
+**Statistics Tutor and Data Assistant, Spring 2019 - Present**
+
+- Provide one-on-one and group tutoring in introductory level statistics classes, assist students with introductory data science concepts such as data wrangling and visualization. 
+
+**Smith College Glee Club Cabinet, Fall 2016 - Present**
+
+*President (2019-2020), Vice President & Secretary (Spring 2019, Fall 2017), Social Chair (Spring 2018), First-Year Treasurer (2016-2017)* 
+
+- Organized and ran retreats for the Glee Club and cabinet. 
+- Organized logistics of the choirs including a weekend trip to New York City and hosting a guest choir.
+- Ran cabinet meetings, voiced concerns of members to conductors.
+- Planned and organized social events for choirs and collaborating groups. 
+- Took minutes for cabinet meetings, and managed membership. 
+ 
+<br>
+

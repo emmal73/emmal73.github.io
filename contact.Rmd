@@ -1,0 +1,20 @@
+---
+title: ""
+output: html_document
+---
+<br>
+
+#### GitHub
+
+You can find most of Emma's latest projects on her [GitHub](https://github.com/emmaL73).
+
+#### Twitter 
+
+To keep up with her thoughts on data science, crafts and pets, check out her [Twitter](https://twitter.com/livin_emma).
+
+#### LinkedIn
+
+For more information about her experience and skills, take a look at [LinkedIn](https://www.linkedin.com/in/emma-livingston/).
+
+#### Email
+To contact her directly, email her at livingston.emma73 at gmail dot com. 
