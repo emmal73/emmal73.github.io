@@ -1,0 +1,15 @@
+name: "Emma Livingston"
+navbar: 
+  title: "Emma Livingston"
+  left:
+    - text: "Contact"
+      href: contact.html
+    - text: "Resume"
+      href: resume.html  
+output_dir: "."
+output:
+  html_document:
+    theme: journal
+
+
+

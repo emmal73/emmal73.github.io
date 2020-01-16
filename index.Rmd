@@ -1,0 +1,21 @@
+---
+title: ""
+output: html_document
+--- 
+  <br>
+  <br>
+  <img src="images/emma_headshot.jpg" align="left" height="200px" width="300px" hspace="20" />
+  
+  
+Emma can usually be found with a cup of tea or coffee working on her latest project in R. She is currently a senior at Smith College, studying Statistical and Data Sciences. This semester she co-authored the R package [**readUCI**](https://github.com/emmal73/readUCI).
+
+
+She has completed coursework in advanced programming in R and advanced statistics such as structural equation modeling and actor-partner interdependence modeling. This semester she is completing the capstone project for the SDS major. In the fall she participated as a mentee in the Out in Tech mentorship program, and built a [shiny app](https://github.com/emmal73/emma_out_in_tech/tree/master/GBM) about gradient booster models.
+
+<br>
+
+When she isn't programming or analyzing data in R, she is running 2 student orgs, and working on knitting and embroidery projects.
+
+<br>
+
+

@@ -10,7 +10,7 @@ output: html_document
 
 - Emma is a senior Statistical and Data Sciences major at Smith College. After her graduation in May 2020, she will join MassMutual's Data Science Development Program in Amherst, MA. 
 - At school Emma is a Stats TA and Data Assistant through the [Spinelli Center for Quantitative Learning](https://www.smith.edu/qlc/index.html).
-- She is the co-author and maintainer of the `readUCI` R package.
+- She is the co-author and maintainer of the [**readUCI**](https://github.com/emmal73/readUCI) R package.
 
 <br>
 
@@ -28,6 +28,7 @@ output: html_document
 ##### Summer 2018, Champaign, Illinois
 - Acquired, tidied and analyzed ten years of election data from Champaign County. 
 - Created interactive maps and other visualizations used to optimize campaign resources and prioritize canvassing strategies. 
+- Check out her [Voter Turnout and Population](https://emmaprojects.shinyapps.io/tpa_turnout/) maps for Champaign County.
 
 
 <br>
