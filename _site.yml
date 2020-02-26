@@ -9,7 +9,7 @@ navbar:
     - text: "Workshops"
       menu:
         - text: "Git & GitHub"
-          href: sds291-workshops/github_slides.html
+          href: github_slides.html
 output_dir: "."
 output:
   html_document:
