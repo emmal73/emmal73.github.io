@@ -38,6 +38,8 @@ output: html_document
 ##### Sept. 2016 - May 2020, Northampton, Massachusetts
 Bachelor of Arts, Statistical and Data Sciences
 
+- 2018 winner of "Best in Group" at Five College DataFest with team A-super-NOVA. Presented a new "competitiveness index" for Indeed.com based on number of jobs, number of applications, and how long jobs have been posted by field and region.
+
 **Statistics Tutor and Data Assistant, Spring 2019 - Present**
 
 - Provide one-on-one and group tutoring in introductory level statistics classes, assist students with introductory data science concepts such as data wrangling and visualization. 
