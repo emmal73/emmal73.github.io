@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>Git &amp; GitHub</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Emma Livingston     emmaL73.github.io" />
-    <meta name="date" content="2020-02-28" />
-    <link href="site_libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="site_libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="site_libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-  </head>
-  <body>
-    <textarea id="source">
-class: center, middle, inverse, title-slide
-
-# Git &amp; GitHub
-### Emma Livingston <br> <a href="https://emmal73.github.io/"></i>  emmaL73.github.io</a><br><br>
-### Smith College
-### Feb. 28, 2020
-
 ---
-
+title: "Git & GitHub"
+author: 'Emma Livingston <br> <a href="https://emmal73.github.io/"></i>&nbsp; emmaL73.github.io</a><br><br>' 
+institute: "Smith College"
+date: "Feb. 28, 2020"
+output:
+  xaringan::moon_reader:
+    css: [default, default, default-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
 #Follow along!
 
 You can find these slides on my website: [emmaL73.github.io/github_slides.html](emmaL73.github.io/github_slides.html)
@@ -53,11 +45,11 @@ We are starting with the assumption that you are using [RStudio Desktop](https:/
 
 1. Install Git
 
-1. Create a repository &amp; add collaborators
+1. Create a repository & add collaborators
 
 1. Clone/download to a .Rproj
 
-1. Commit -&gt; Pull -&gt; Push
+1. Commit -> Pull -> Push
 
 1. GitHub best practices
 
@@ -69,7 +61,7 @@ Please don't work ahead! If you finish before we move on, help someone near you.
 
 
 ---
-# Why Git &amp; GitHub?
+# Why Git & GitHub?
 
 [Version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control): keep track of changes to files
 
@@ -193,8 +185,7 @@ In the Terminal, type the following lines one at a time, substituting in your ow
 
 If you would rather do this using a package and function, try
 
-
-```r
+```{r, eval = FALSE}
 #install.packages("usethis")
 library(usethis)
 use_git_config(user.name = "USERNAME", user.email = "EMAIL")
@@ -239,12 +230,12 @@ If you are having difficulties, consult the [Install Git](https://happygitwithr.
 ---
 # Create a Repo
 
-&lt;img src="github_slides_files/figure-html/github_repo.png"&gt;
+<img src="github_slides_files/figure-html/github_repo.png">
 
 ---
 # Create a Repo
 
-&lt;img src="github_slides_files/figure-html/create_repo.png"&gt;
+<img src="github_slides_files/figure-html/create_repo.png">
 
 
 ---
@@ -257,17 +248,17 @@ Collaborators, you will get an email with a link to accept the invitation.
 ---
 # Add Collaborators
 
-&lt;img src="github_slides_files/figure-html/collaborator.png"&gt;
+<img src="github_slides_files/figure-html/collaborator.png">
 
 ---
 # View Invitation
 
-&lt;img src="github_slides_files/figure-html/email_invitation.png"&gt;
+<img src="github_slides_files/figure-html/email_invitation.png">
 
 ---
 # Accept Invitation
 
-&lt;img src="github_slides_files/figure-html/accept_invitation.png"&gt;
+<img src="github_slides_files/figure-html/accept_invitation.png">
 
 ---
 # Work time: Create a repository
@@ -300,28 +291,28 @@ We start this process from within GitHub, and then move to RStudio.
 ---
 # Clone or Download
 
-&lt;img src="github_slides_files/figure-html/clone.png"&gt;
+<img src="github_slides_files/figure-html/clone.png">
 
 ---
 # New Project
 
-&lt;img src="github_slides_files/figure-html/new_proj.png"&gt;
+<img src="github_slides_files/figure-html/new_proj.png">
 
 ---
 # Version Control 
 
-&lt;img src="github_slides_files/figure-html/version_control.png"&gt;
+<img src="github_slides_files/figure-html/version_control.png">
 
 ---
 # Git New Project
 
-&lt;img src="github_slides_files/figure-html/git_proj.png"&gt;
+<img src="github_slides_files/figure-html/git_proj.png">
 
 ---
 
 # New Project
 
-&lt;img src="github_slides_files/figure-html/project.jpg"&gt;
+<img src="github_slides_files/figure-html/project.jpg">
 
 ---
 # Work time: .Rproj
@@ -404,22 +395,22 @@ To minimize merge conflicts:
 ---
 # Make Changes
 
-&lt;img src="github_slides_files/figure-html/contribution_readme.png"&gt;
+<img src="github_slides_files/figure-html/contribution_readme.png">
 
 ---
 # Commit
 
-&lt;img src="github_slides_files/figure-html/commit_message.png"&gt;
+<img src="github_slides_files/figure-html/commit_message.png">
 
 ---
-# Pull &amp; Push
+# Pull & Push
 
-&lt;img src="github_slides_files/figure-html/pull_push.png"&gt;
+<img src="github_slides_files/figure-html/pull_push.png">
 
 ---
 # See the Results!
 
-&lt;img src="github_slides_files/figure-html/check_readme.png"&gt;
+<img src="github_slides_files/figure-html/check_readme.png">
 
 ---
 # Work time: Commit, pull, push
@@ -443,17 +434,17 @@ These can look scary, but they are totally fixable.
 ---
 # Merge Conflicts
 
-&lt;img src="github_slides_files/figure-html/merge_conflict.png"&gt;
+<img src="github_slides_files/figure-html/merge_conflict.png">
 
 ---
 # Fix Merge Conflicts
 
-&lt;img src="github_slides_files/figure-html/fix_merge_conflict.png"&gt;
+<img src="github_slides_files/figure-html/fix_merge_conflict.png">
 
 ---
 # How to Fix a Merge Conflict
 
-* A "merge conflict" in your .Rmd will start with `&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD` and end with `&gt;&gt;&gt;&gt;&gt;&gt;&gt;` &amp; the commit number (which is just a bunch of letters and numbers).
+* A "merge conflict" in your .Rmd will start with `<<<<<<<HEAD` and end with `>>>>>>>` & the commit number (which is just a bunch of letters and numbers).
 
  + These mark the beginning and end of where the merge conflict happened. It is important to look closely at these lines to make sure that the code still works!
  
@@ -462,10 +453,10 @@ These can look scary, but they are totally fixable.
 ---
 # Fix Merge Conflicts
 
-&lt;img src="github_slides_files/figure-html/commit_merge_fix.png"&gt;
+<img src="github_slides_files/figure-html/commit_merge_fix.png">
 
 ---
-# Troubleshooting &amp; Help
+# Troubleshooting & Help
 
 * [GitHub glossary](https://help.github.com/en/github/getting-started-with-github/github-glossary)
 
@@ -476,17 +467,17 @@ These can look scary, but they are totally fixable.
 
 some memes by yours truly
 
-&lt;img src="github_slides_files/figure-html/bopit_meme.jpg"&gt;
-&lt;br&gt;
+<img src="github_slides_files/figure-html/bopit_meme.jpg">
+<br>
 
 --
 
-&lt;img src="github_slides_files/figure-html/bopit_xl.png"&gt;
-&lt;br&gt;
+<img src="github_slides_files/figure-html/bopit_xl.png">
+<br>
 
 --
 
-&lt;img src="github_slides_files/figure-html/git_wrecked.png"&gt;
+<img src="github_slides_files/figure-html/git_wrecked.png">
 
 ---
 # More Git/GitHub humor
@@ -494,111 +485,3 @@ some memes by yours truly
 Watch your commit messages scroll by!
 
 [starslog.net](http://starlogs.net/#emmal73/readUCI)
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
-
-<script>
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
