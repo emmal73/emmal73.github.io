@@ -1,0 +1,196 @@
+---
+title: "These are a Few of my Favorite (R) Things"
+date: "3/7/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br> 
+
+Those who have worked with me closely know that I am a **huge** fan of a keyboard shortcut. They are such a part of my muscle memory that I have been known to demonstrate the shortcut on a non-existant keyboard before I remember the names of the keys. So, I thought I would write up a list of the ones I use most frequently, and few that I would like to incorporate into my day-to-day use.
+
+Since I'm a Windows user, all of these are for Windows computers, but most if not all of them translate well to Macs.
+
+
+<br>
+
+### ctrl and/or shift + arrow
+
+This isn't unique to RStudio, but I use it all the time. Holding down "shift" and using the arrow keys moves your cursor left or right while highlighting (if you use the up or down arrow you will highlight the whole line). Holding down "ctrl" while using the left and right arrows will jump your cursor to the beginning or end of the next word or space. 
+
+Using these in combination helps me select stuff really fast, and is very helpful for quick edits.
+
+ctrl + up or down arrow scrolls within the document for you. Be careful, it doesn't automatically move the cursor so I have found myself looking at one part of a script and typing in another before.
+
+<br> 
+
+### alt (+ shift) + arrow (left and right)
+
+This is the power up version of ctrl + shift + arrow. alt + left or right arrow takes you to the beginning or end of a line. When used in conjunction with shift (alt + shift + arrow) you efficiently select an entire line. Very useful when I change my mind completely about the code I want to write.
+
+<br>
+
+### alt (+ shift) + arrow (up and down)
+
+alt + up or down will move the line you are currently on up or down. If you have multiple lines selected, you can move them all at the same time. 
+
+alt + shift + up or down will copy the line that you are currently in above or below it.
+
+<br>
+
+### alt cursor
+
+If you hit alt and then drag your cursor across several lines, you can create a multi-cursor. This is super helpful for if you have to make lots of the same changes across mutiple lines of code. This acts as a cursor, so you can escape this feature simply by clicking somewhere else or hitting your escape key.
+
+<br>
+
+### ctrl + alt + i
+
+This one is a game changer: ctrl + alt + i inserts a new R code chunk in a .Rmd. 
+
+<br>
+
+### ctrl + shift + k
+
+This knits the document you are currently in.
+
+<br>
+
+### ctrl + alt + s
+
+The big sibling to ctrl + s, saves all documents you have open.
+
+<br>
+
+### ctrl + shift + c
+
+In an R chunk, this shortcut will comment out everything that you have highlighted. It isn't time efficient if you are only commenting out one line, but it is very helpful if there are several lines you're trying to comment out at the same time.
+
+<br>
+
+### ctrl + l
+
+If you are in the console, ctrl + l clears out the console. This doesn't technically do that much, but it does clean things up a bit. 
+
+<br>
+
+### ctrl + shift + z
+
+ctrl + shift + z acts as a "redo". Thinking about "undo" and "redo" while coding is tricky because once you have run code you can't really undo the work with a shortcut, but ctrl + z and ctrl + shift + z are helpful for what you are writing. Just be aware that it doesn't make changes to objects that you have created or edited, just the text/code you have written. 
+
+<br> 
+<br>
+
+# Short cuts I used a lot when I was working in R scripts
+
+There was a summer internship I had where most of the work that was happening in R was being done in scripts, so I developed a few shortcut habits that were useful in that arena.
+
+<br>
+
+### ctrl + shift + /
+
+If you have a long comment, ctrl + shift + / will "reflow" it for you. This is less useful in a .Rmd code chunk I have found but still worth knowing.
+
+ctrl + shift + / will turn this: 
+
+```{r}
+# Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers? Where's the peck of pickled peppers Peter Piper picked?
+```
+
+into this:
+
+```{r}
+# Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter
+# Piper picked. If Peter Piper picked a peck of pickled peppers? Where's the
+# peck of pickled peppers Peter Piper picked?
+```
+
+<br>
+
+### ctrl + shift + n
+
+Open a new R script. If I ever figure out how to set my own keyboard shortcuts, I'm going to create one to open a new .Rmd. But for now, if I ever need an R script, this is a quick way to go.
+
+<br>
+<br>
+
+# Keyboard shortcuts I should use more
+
+<br>
+
+### ctrl + 2
+
+Switches your focus to the console.
+
+<br>
+
+### ctrl + 1
+
+Switches your focus to the source pane. 
+
+<br>
+
+### ctrl + shift + m
+
+This one I learned about after I already had %>% hard coded into my muscle memory, but it is a much smoother action than typing out the %>% by hand, and is probably less prone to typos (I can't tell you how many times I've tried to use `$>$` or `%?%`).
+
+<br>
+
+### alt + shift + k
+
+This shortcut is very meta: it brings up the window that has all of the information about keyboard shortcuts! As you can see I have barely scratched the surface in terms of how I use shortcuts.
+
+
+<br>
+<br>
+
+# Not a keyboard shortcut, but...
+
+<br>
+
+### highlighting and inserting
+
+If you highlight a segment of code or text, if you then hit ', ", (, [, {, or `, the highlighted segment won't get written over and instead surrounded by the open and close of that version of that character. 
+
+<br>
+
+### Code chunk naming and document outline
+
+In the bottom ribbon of the Source pane (top left), there is a drop-down menu that has all of your code chunks and headers in it. Clicking on one of those will bring you in your document to that section. This is especially useful when working with really long documents. It is also good incentive to name your code chunks!
+
+If this were in a full code chunk, `{r edelweiss}` this chunk would be called "edelweiss".
+
+<br>
+
+### skimr package
+
+The `skimr` is how I accomplish most of my exploratory data analysis, and when I have to do a lot of data transformation, my quality checks. `skimr::skim()` quickly shows you some basic information about all of your variables: number of missings, number of completes, and for numeric variables the standard deviation, mean, quartiles, and a little histogram. 
+<br>
+
+### praise package
+
+If you are ever in need of a pick-me-up, `praise::praise()` will do the trick.
+
+<br>
+
+### Spell check!
+
+Did you know there is a spell-check feature in RStudio? It's in the top ribbon of the Source pane. The icon has "ABC" and a check mark. Not perfect because it doesn't automatically know data-sciency words like "missingness" but you can add words to your dictionary.
+
+Turns out there is in fact a keyboard shortcut for this! Use F7 to check your spelling.
+
+<br>
+
+### datapasta
+
+Do you find yourself copying and pasting in and out of RStudio frequently? `datapasta` is your new best friend. It is an RStudio add-in and it lets you easily paste stuff in as a vector or tribble (among other things).
+
+<br>
+
+### up and down arrows in the console
+
+Within the console, use the up and down arrows to call up code that you have previously run in the current line.
+

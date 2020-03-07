@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>These are a Few of my Favorite (R) Things</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Emma Livingston</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="contact.html">Contact</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Workshops
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="github_slides.html">Git &amp; GitHub</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Blog Posts
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="favorite_things.html">Favorite (R) Things</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">These are a Few of my Favorite (R) Things</h1>
+<h4 class="date">3/7/2020</h4>
+
+</div>
+
+
+<p><br></p>
+<p>Those who have worked with me closely know that I am a <strong>huge</strong> fan of a keyboard shortcut. They are such a part of my muscle memory that I have been known to demonstrate the shortcut on a non-existant keyboard before I remember the names of the keys. So, I thought I would write up a list of the ones I use most frequently, and few that I would like to incorporate into my day-to-day use.</p>
+<p>Since I’m a Windows user, all of these are for Windows computers, but most if not all of them translate well to Macs.</p>
+<p><br></p>
+<div id="ctrl-andor-shift-arrow" class="section level3">
+<h3>ctrl and/or shift + arrow</h3>
+<p>This isn’t unique to RStudio, but I use it all the time. Holding down “shift” and using the arrow keys moves your cursor left or right while highlighting (if you use the up or down arrow you will highlight the whole line). Holding down “ctrl” while using the left and right arrows will jump your cursor to the beginning or end of the next word or space.</p>
+<p>Using these in combination helps me select stuff really fast, and is very helpful for quick edits.</p>
+<p>ctrl + up or down arrow scrolls within the document for you. Be careful, it doesn’t automatically move the cursor so I have found myself looking at one part of a script and typing in another before.</p>
+<p><br></p>
+</div>
+<div id="alt-shift-arrow-left-and-right" class="section level3">
+<h3>alt (+ shift) + arrow (left and right)</h3>
+<p>This is the power up version of ctrl + shift + arrow. alt + left or right arrow takes you to the beginning or end of a line. When used in conjunction with shift (alt + shift + arrow) you efficiently select an entire line. Very useful when I change my mind completely about the code I want to write.</p>
+<p><br></p>
+</div>
+<div id="alt-shift-arrow-up-and-down" class="section level3">
+<h3>alt (+ shift) + arrow (up and down)</h3>
+<p>alt + up or down will move the line you are currently on up or down. If you have multiple lines selected, you can move them all at the same time.</p>
+<p>alt + shift + up or down will copy the line that you are currently in above or below it.</p>
+<p><br></p>
+</div>
+<div id="alt-cursor" class="section level3">
+<h3>alt cursor</h3>
+<p>If you hit alt and then drag your cursor across several lines, you can create a multi-cursor. This is super helpful for if you have to make lots of the same changes across mutiple lines of code. This acts as a cursor, so you can escape this feature simply by clicking somewhere else or hitting your escape key.</p>
+<p><br></p>
+</div>
+<div id="ctrl-alt-i" class="section level3">
+<h3>ctrl + alt + i</h3>
+<p>This one is a game changer: ctrl + alt + i inserts a new R code chunk in a .Rmd.</p>
+<p><br></p>
+</div>
+<div id="ctrl-shift-k" class="section level3">
+<h3>ctrl + shift + k</h3>
+<p>This knits the document you are currently in.</p>
+<p><br></p>
+</div>
+<div id="ctrl-alt-s" class="section level3">
+<h3>ctrl + alt + s</h3>
+<p>The big sibling to ctrl + s, saves all documents you have open.</p>
+<p><br></p>
+</div>
+<div id="ctrl-shift-c" class="section level3">
+<h3>ctrl + shift + c</h3>
+<p>In an R chunk, this shortcut will comment out everything that you have highlighted. It isn’t time efficient if you are only commenting out one line, but it is very helpful if there are several lines you’re trying to comment out at the same time.</p>
+<p><br></p>
+</div>
+<div id="ctrl-l" class="section level3">
+<h3>ctrl + l</h3>
+<p>If you are in the console, ctrl + l clears out the console. This doesn’t technically do that much, but it does clean things up a bit.</p>
+<p><br></p>
+</div>
+<div id="ctrl-shift-z" class="section level3">
+<h3>ctrl + shift + z</h3>
+<p>ctrl + shift + z acts as a “redo”. Thinking about “undo” and “redo” while coding is tricky because once you have run code you can’t really undo the work with a shortcut, but ctrl + z and ctrl + shift + z are helpful for what you are writing. Just be aware that it doesn’t make changes to objects that you have created or edited, just the text/code you have written.</p>
+<p><br> <br></p>
+</div>
+<div id="short-cuts-i-used-a-lot-when-i-was-working-in-r-scripts" class="section level1">
+<h1>Short cuts I used a lot when I was working in R scripts</h1>
+<p>There was a summer internship I had where most of the work that was happening in R was being done in scripts, so I developed a few shortcut habits that were useful in that arena.</p>
+<p><br></p>
+<div id="ctrl-shift" class="section level3">
+<h3>ctrl + shift + /</h3>
+<p>If you have a long comment, ctrl + shift + / will “reflow” it for you. This is less useful in a .Rmd code chunk I have found but still worth knowing.</p>
+<p>ctrl + shift + / will turn this:</p>
+<pre class="r"><code># Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers? Where&#39;s the peck of pickled peppers Peter Piper picked?</code></pre>
+<p>into this:</p>
+<pre class="r"><code># Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter
+# Piper picked. If Peter Piper picked a peck of pickled peppers? Where&#39;s the
+# peck of pickled peppers Peter Piper picked?</code></pre>
+<p><br></p>
+</div>
+<div id="ctrl-shift-n" class="section level3">
+<h3>ctrl + shift + n</h3>
+<p>Open a new R script. If I ever figure out how to set my own keyboard shortcuts, I’m going to create one to open a new .Rmd. But for now, if I ever need an R script, this is a quick way to go.</p>
+<p><br> <br></p>
+</div>
+</div>
+<div id="keyboard-shortcuts-i-should-use-more" class="section level1">
+<h1>Keyboard shortcuts I should use more</h1>
+<p><br></p>
+<div id="ctrl-2" class="section level3">
+<h3>ctrl + 2</h3>
+<p>Switches your focus to the console.</p>
+<p><br></p>
+</div>
+<div id="ctrl-1" class="section level3">
+<h3>ctrl + 1</h3>
+<p>Switches your focus to the source pane.</p>
+<p><br></p>
+</div>
+<div id="ctrl-shift-m" class="section level3">
+<h3>ctrl + shift + m</h3>
+<p>This one I learned about after I already had %&gt;% hard coded into my muscle memory, but it is a much smoother action than typing out the %&gt;% by hand, and is probably less prone to typos (I can’t tell you how many times I’ve tried to use <code>$&gt;$</code> or <code>%?%</code>).</p>
+<p><br></p>
+</div>
+<div id="alt-shift-k" class="section level3">
+<h3>alt + shift + k</h3>
+<p>This shortcut is very meta: it brings up the window that has all of the information about keyboard shortcuts! As you can see I have barely scratched the surface in terms of how I use shortcuts.</p>
+<p><br> <br></p>
+</div>
+</div>
+<div id="not-a-keyboard-shortcut-but" class="section level1">
+<h1>Not a keyboard shortcut, but…</h1>
+<p><br></p>
+<div id="highlighting-and-inserting" class="section level3">
+<h3>highlighting and inserting</h3>
+<p>If you highlight a segment of code or text, if you then hit ’, ", (, [, {, or `, the highlighted segment won’t get written over and instead surrounded by the open and close of that version of that character.</p>
+<p><br></p>
+</div>
+<div id="code-chunk-naming-and-document-outline" class="section level3">
+<h3>Code chunk naming and document outline</h3>
+<p>In the bottom ribbon of the Source pane (top left), there is a drop-down menu that has all of your code chunks and headers in it. Clicking on one of those will bring you in your document to that section. This is especially useful when working with really long documents. It is also good incentive to name your code chunks!</p>
+<p>If this were in a full code chunk, <code>{r edelweiss}</code> this chunk would be called “edelweiss”.</p>
+<p><br></p>
+</div>
+<div id="skimr-package" class="section level3">
+<h3>skimr package</h3>
+<p>The <code>skimr</code> is how I accomplish most of my exploratory data analysis, and when I have to do a lot of data transformation, my quality checks. <code>skimr::skim()</code> quickly shows you some basic information about all of your variables: number of missings, number of completes, and for numeric variables the standard deviation, mean, quartiles, and a little histogram. <br></p>
+</div>
+<div id="praise-package" class="section level3">
+<h3>praise package</h3>
+<p>If you are ever in need of a pick-me-up, <code>praise::praise()</code> will do the trick.</p>
+<p><br></p>
+</div>
+<div id="spell-check" class="section level3">
+<h3>Spell check!</h3>
+<p>Did you know there is a spell-check feature in RStudio? It’s in the top ribbon of the Source pane. The icon has “ABC” and a check mark. Not perfect because it doesn’t automatically know data-sciency words like “missingness” but you can add words to your dictionary.</p>
+<p>Turns out there is in fact a keyboard shortcut for this! Use F7 to check your spelling.</p>
+<p><br></p>
+</div>
+<div id="datapasta" class="section level3">
+<h3>datapasta</h3>
+<p>Do you find yourself copying and pasting in and out of RStudio frequently? <code>datapasta</code> is your new best friend. It is an RStudio add-in and it lets you easily paste stuff in as a vector or tribble (among other things).</p>
+<p><br></p>
+</div>
+<div id="up-and-down-arrows-in-the-console" class="section level3">
+<h3>up and down arrows in the console</h3>
+<p>Within the console, use the up and down arrows to call up code that you have previously run in the current line.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

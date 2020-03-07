@@ -10,6 +10,10 @@ navbar:
       menu:
         - text: "Git & GitHub"
           href: github_slides.html
+    - text: "Blog Posts"
+      menu:
+        - text: "Favorite (R) Things"
+          href: favorite_things.html
 output_dir: "."
 output:
   html_document:
