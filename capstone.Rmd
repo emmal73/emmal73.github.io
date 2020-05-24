@@ -1,0 +1,98 @@
+---
+title: "What I Learned from my Capstone"
+author: "Emma Livingston"
+date: "5/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br> 
+
+One of the required classes for the [Statistical and Data Sciences](https://www.smith.edu/academics/statistics) major at Smith College is the Capstone. Each group of 3-5 students works with a client in either non-profit, industry, government, or academia, to complete a data-related project.
+
+I learned a lot of new coding skills through this project, but what I want to focus on here is what I learned outside of the end result of the project. Mostly, this is a (slightly snarky) note-to-my-past-self, and what I wish I had thought about starting in January. C'est la vie, better late than never.
+
+<br>
+
+## Working with Senstive Data
+
+Our team was tasked with working with data that could not be shared publicly. This conflicted with our typical workflow in the department of using GitHub. After much consideration, we decided to use a private repository for the project, but without uploading any of the data. This took some planning ahead.
+
+We each had a `data` folder in our `.Rproj`, but this folder was listed on the `.gitignore`, so we didn't commit or push any of the changes we made to that folder. This meant that the data wasn't uploaded to GitHub, but it also meant we had to be intentional about making sure we were all on the same page with the contents of the `data` folder. 
+
+The way we worked around this was by using the [here](https://www.rdocumentation.org/packages/here/versions/0.1) package, and making sure that we all had the same exact `.csv` files with the same names in our `data` folder. Then, when we wanted to import data in our repository, the code looked like this:
+
+```{r, eval = FALSE}
+df <- read_csv(here("/data/frame.csv"))
+```
+
+<br>
+
+## Organizing the Code
+
+Something I wish we had done better about from the beginning was how we organized our `.Rmd`s. Based on our experience and what I wish I would have thought of in February, here are some tips for keeping a project organized.
+
+1. Pick one document to do all the data cleaning in. If you have the same data cleaning process copied and pasted into all of the documents you need, there are bound to be inconsistencies, which will lead to some late night nit-picking of inner joins (hypothetically). This way, you can just run that script before any of your other stuff. Alternatively, if you have a better way to go about this, I'd love to hear your ideas.
+
+1. Make sure that the name of the document tells you exactly what is inside. Don't just tack on something to the end of a document you are already in, start a new one. You don't want to end up in a situation where you can't find a case study you did because you left it at the end of the document that should just be exploratory data analysis. 
+
+1. Comment your code. Not for yourself, but for the other people who have to read it. While it might be self-explanatory and very clear to you what you are doing, it might not be so clear to someone else! You may end up in a situation where you have to pick up where someone left off, so be kind to them and make sure it is very clear what your goal is and how you got there.
+
+1. Commit and push early and often. You don't want to be the only person with critical visualizations on your computer that has just crashed. GitHub is only a tool that is as valuable as how well you use it, so do future-you a favor and make sure your work is pushed properly.
+
+1. Don't just work in the console! If you are trying to figure out a problem and you're playing around in the console, consider saving more of it in an `.Rmd` than you might think. The stuff you're playing around with right now might really help you out later! And if it doesn't, you can just comment it out. It's always better to have extra code that you don't need than to not have what you're looking for a week from now.
+
+<br>
+
+## Communication
+
+As teammates, it's important to have a structure for how you are going to communicate. If you get a question from your client, who's responsibility is it to respond? Who has to sign off on the answers before they get sent? 
+
+Also, spending a few minutes of a meeting catching up and talking about your personal lives isn't wasting time (as long as it's only a few minutes). Getting to know each other as a team helps you work better together.
+
+<br>
+
+## Goal-setting
+
+If you're using a system like scrum that has sprints, make sure to set reasonable goals for yourself during the sprint. Make sure it's something that you *know* is attainable. There are undoubtedly going to be setbacks and challenges that you couldn't have foreseen or that were more complicated than anticipated, so you'll be happy to have given yourself a bit of breathing room. You can always get more done during a sprint than you were planning.
+
+<br>
+
+## Finding and understanding your data is most of the battle `r emo::ji("magnifying")`
+
+If you have been involved with data science for at least a little while, you've probably heard an estimate that 80% of your time is spent tidying data. What you may not be thinking about is that you have to actually *find* your data first. If it is in a database you're unfamiliar with and isn't clearly documented, it is going to take a lot of work just to get your data. For our capstone project, our first sprint goal was just to *get* the dataset that we thought we needed (which involved several queries and a few joins), and even up to a week before presenting we were still pulling in more data. In my experience, by the time you get, understand, and clean the data, the analyses feel something like an afterthought. 
+
+<br>
+
+## Nobody cares about the thing you are (probably) most proud of
+
+As a data scientist, what you are probably most proud of in the project are the new tech skills you developed, the really intricate visualization that you figured out how to do, or how you *finally* figured out how to get the data in the format you needed. Tough luck. The people who care about the work that you are doing don't actually care about what it took to get there.
+
+They also don't care about the order in which you did things. It doesn't matter if you decided to look into one thing first and then the other and then went back and forth about the analyses. Presenting them in a way that is true to the direction that your analyses took is probably not going to be the easiest to understand. Even if the timeline makes sense to you, it probably doesn't to the people who it matters to. 
+
+<br>
+
+## Be direct!
+
+As D'Ignazio and Klein say in their book [Data Feminism](https://data-feminism.mitpress.mit.edu/), [**the numbers don't speak for themselves**](https://bookbook.pubpub.org/pub/6ui5n4vo/release/4). Your results and conclusions might seem obvious to you when looking at a visualization or what-have-you, but they aren't necessarily obvious to others! Remember, not everyone has also been looking at that same graph for 3 months. Can you make that graph even more simple? You probably can.
+
+<br>
+
+## Think about your presentation medium `r emo::ji("graph")`
+
+Since hopefully everyone in data science (at least in the US) is working remotely right now, presentations are happening over a "share your screen" feature. It's important to make sure that all of your legends, axis labels, citations, etc. are clearly legible. What we did for a lot of our graphs is instead of having categories listed on the x axis, had them represented as colors. The legend was much easier to read than the axis labels. This did mean that we were redoing visualizations the night before, but the difference was definitely worth it.
+
+<br>
+
+## Celebrate! `r emo::ji("confetti")`
+
+Be sure to take time to celebrate, not just the big things, but also the small ones! Congratulate your teammate on a successful query, easy-to-read code, or an impressive visualization. Knowing that your teammates are rooting for you and are excited about your accomplishments makes a big difference.
+
+<br>
+
+## Thank your advisors
+
+Thank you [Prof. Miles Ott](https://twitter.com/Miles_Ott) for all of your support and guidance this semester. The truth is most of these ideas and suggestions were his, and helped us end up with a much better product in the end. And thanks for putting up with me constantly asking to see pictures of your dogs `r emo::ji("dog")`

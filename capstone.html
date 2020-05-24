@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Emma Livingston" />
+
+
+<title>What I Learned from my Capstone</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Emma Livingston</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="contact.html">Contact</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Workshops
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="github_slides.html">Git &amp; GitHub</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Blog Posts
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="favorite_things.html">Favorite (R) Things</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">What I Learned from my Capstone</h1>
+<h4 class="author">Emma Livingston</h4>
+<h4 class="date">5/23/2020</h4>
+
+</div>
+
+
+<p><br></p>
+<p>One of the required classes for the <a href="https://www.smith.edu/academics/statistics">Statistical and Data Sciences</a> major at Smith College is the Capstone. Each group of 3-5 students works with a client in either non-profit, industry, government, or academia, to complete a data-related project.</p>
+<p>I learned a lot of new coding skills through this project, but what I want to focus on here is what I learned outside of the end result of the project. Mostly, this is a (slightly snarky) note-to-my-past-self, and what I wish I had thought about starting in January. C’est la vie, better late than never.</p>
+<p><br></p>
+<div id="working-with-senstive-data" class="section level2">
+<h2>Working with Senstive Data</h2>
+<p>Our team was tasked with working with data that could not be shared publicly. This conflicted with our typical workflow in the department of using GitHub. After much consideration, we decided to use a private repository for the project, but without uploading any of the data. This took some planning ahead.</p>
+<p>We each had a <code>data</code> folder in our <code>.Rproj</code>, but this folder was listed on the <code>.gitignore</code>, so we didn’t commit or push any of the changes we made to that folder. This meant that the data wasn’t uploaded to GitHub, but it also meant we had to be intentional about making sure we were all on the same page with the contents of the <code>data</code> folder.</p>
+<p>The way we worked around this was by using the <a href="https://www.rdocumentation.org/packages/here/versions/0.1">here</a> package, and making sure that we all had the same exact <code>.csv</code> files with the same names in our <code>data</code> folder. Then, when we wanted to import data in our repository, the code looked like this:</p>
+<pre class="r"><code>df &lt;- read_csv(here(&quot;/data/insert_data_name.csv&quot;))</code></pre>
+<p><br></p>
+</div>
+<div id="organizing-the-code" class="section level2">
+<h2>Organizing the Code</h2>
+<p>Something I wish we had done better about from the beginning was how we organized our <code>.Rmd</code>s. Based on our experience and what I wish I would have thought of in February, here are some tips for keeping a project organized.</p>
+<ol style="list-style-type: decimal">
+<li><p>Pick one document to do all the data cleaning in. If you have the same data cleaning process copied and pasted into all of the documents you need, there are bound to be inconsistencies, which will lead to some late night nit-picking of inner joins (hypothetically). This way, you can just run that script before any of your other stuff. Alternatively, if you have a better way to go about this, I’d love to hear your ideas.</p></li>
+<li><p>Make sure that the name of the document tells you exactly what is inside. Don’t just tack on something to the end of a document you are already in, start a new one. You don’t want to end up in a situation where you can’t find a case study you did because you left it at the end of the document that should just be exploratory data analysis.</p></li>
+<li><p>Comment your code. Not for yourself, but for the other people who have to read it. While it might be self-explanatory and very clear to you what you are doing, it might not be so clear to someone else! You may end up in a situation where you have to pick up where someone left off, so be kind to them and make sure it is very clear what your goal is and how you got there.</p></li>
+<li><p>Commit and push early and often. You don’t want to be the only person with critical visualizations on your computer that has just crashed. GitHub is only a tool that is as valuable as how well you use it, so do future-you a favor and make sure your work is pushed properly.</p></li>
+<li><p>Don’t just work in the console! If you are trying to figure out a problem and you’re playing around in the console, consider saving more of it in an <code>.Rmd</code> than you might think. The stuff you’re playing around with right now might really help you out later! And if it doesn’t, you can just comment it out. It’s always better to have extra code that you don’t need than to not have what you’re looking for a week from now.</p></li>
+</ol>
+<p><br></p>
+</div>
+<div id="communication" class="section level2">
+<h2>Communication</h2>
+<p>As teammates, it’s important to have a structure for how you are going to communicate. If you get a question from your client, who’s responsibility is it to respond? Who has to sign off on the answers before they get sent?</p>
+<p>Also, spending a few minutes of a meeting catching up and talking about your personal lives isn’t wasting time (as long as it’s only a few minutes). Getting to know each other as a team helps you work better together.</p>
+<p><br></p>
+</div>
+<div id="goal-setting" class="section level2">
+<h2>Goal-setting</h2>
+<p>If you’re using a system like scrum that has sprints, make sure to set reasonable goals for yourself during the sprint. Make sure it’s something that you <em>know</em> is attainable. There are undoubtedly going to be setbacks and challenges that you couldn’t have foreseen or that were more complicated than anticipated, so you’ll be happy to have given yourself a bit of breathing room. You can always get more done during a sprint than you were planning.</p>
+<p><br></p>
+</div>
+<div id="finding-and-understanding-your-data-is-most-of-the-battle" class="section level2">
+<h2>Finding and understanding your data is most of the battle 🔍</h2>
+<p>If you have been involved with data science for at least a little while, you’ve probably heard an estimate that 80% of your time is spent tidying data. What you may not be thinking about is that you have to actually <em>find</em> your data first. If it is in a database you’re unfamiliar with and isn’t clearly documented, it is going to take a lot of work just to get your data. For our capstone project, our first sprint goal was just to <em>get</em> the dataset that we thought we needed (which involved several queries and a few joins), and even up to a week before presenting we were still pulling in more data. In my experience, by the time you get, understand, and clean the data, the analyses feel something like an afterthought.</p>
+<p><br></p>
+</div>
+<div id="nobody-cares-about-the-thing-you-are-probably-most-proud-of" class="section level2">
+<h2>Nobody cares about the thing you are (probably) most proud of</h2>
+<p>As a data scientist, what you are probably most proud of in the project are the new tech skills you developed, the really intricate visualization that you figured out how to do, or how you <em>finally</em> figured out how to get the data in the format you needed. Tough luck. The people who care about the work that you are doing don’t actually care about what it took to get there.</p>
+<p>They also don’t care about the order in which you did things. It doesn’t matter if you decided to look into one thing first and then the other and then went back and forth about the analyses. Presenting them in a way that is true to the direction that your analyses took is probably not going to be the easiest to understand. Even if the timeline makes sense to you, it probably doesn’t to the people who it matters to.</p>
+<p><br></p>
+</div>
+<div id="be-direct" class="section level2">
+<h2>Be direct!</h2>
+<p>As D’Ignazio and Klein say in their book <a href="https://data-feminism.mitpress.mit.edu/">Data Feminism</a>, <a href="https://bookbook.pubpub.org/pub/6ui5n4vo/release/4"><strong>the numbers don’t speak for themselves</strong></a>. Your results and conclusions might seem obvious to you when looking at a visualization or what-have-you, but they aren’t necessarily obvious to others! Remember, not everyone has also been looking at that same graph for 3 months. Can you make that graph even more simple? You probably can.</p>
+<p><br></p>
+</div>
+<div id="think-about-your-presentation-medium" class="section level2">
+<h2>Think about your presentation medium 💹</h2>
+<p>Since hopefully everyone in data science (at least in the US) is working remotely right now, presentations are happening over a “share your screen” feature. It’s important to make sure that all of your legends, axis labels, citations, etc. are clearly legible. What we did for a lot of our graphs is instead of having categories listed on the x axis, had them represented as colors. The legend was much easier to read than the axis labels. This did mean that we were redoing visualizations the night before, but the difference was definitely worth it.</p>
+<p><br></p>
+</div>
+<div id="celebrate" class="section level2">
+<h2>Celebrate! 🎊</h2>
+<p>Be sure to take time to celebrate, not just the big things, but also the small ones! Congratulate your teammate on a successful query, easy-to-read code, or an impressive visualization. Knowing that your teammates are rooting for you and are excited about your accomplishments makes a big difference.</p>
+<p><br></p>
+</div>
+<div id="thank-your-advisors" class="section level2">
+<h2>Thank your advisors</h2>
+<p>Thank you <a href="https://twitter.com/Miles_Ott">Prof. Miles Ott</a> for all of your support and guidance this semester. The truth is most of these ideas and suggestions were his, and helped us end up with a much better product in the end. And thanks for putting up with me constantly asking to see pictures of your dogs 🐶</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
