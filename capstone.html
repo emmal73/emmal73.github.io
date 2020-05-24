@@ -300,6 +300,9 @@ $(document).ready(function () {
     <li>
       <a href="favorite_things.html">Favorite (R) Things</a>
     </li>
+    <li>
+      <a href="capstone.html">What I Learned in Capstone</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -330,7 +333,7 @@ $(document).ready(function () {
 <p>Our team was tasked with working with data that could not be shared publicly. This conflicted with our typical workflow in the department of using GitHub. After much consideration, we decided to use a private repository for the project, but without uploading any of the data. This took some planning ahead.</p>
 <p>We each had a <code>data</code> folder in our <code>.Rproj</code>, but this folder was listed on the <code>.gitignore</code>, so we didn’t commit or push any of the changes we made to that folder. This meant that the data wasn’t uploaded to GitHub, but it also meant we had to be intentional about making sure we were all on the same page with the contents of the <code>data</code> folder.</p>
 <p>The way we worked around this was by using the <a href="https://www.rdocumentation.org/packages/here/versions/0.1">here</a> package, and making sure that we all had the same exact <code>.csv</code> files with the same names in our <code>data</code> folder. Then, when we wanted to import data in our repository, the code looked like this:</p>
-<pre class="r"><code>df &lt;- read_csv(here(&quot;/data/insert_data_name.csv&quot;))</code></pre>
+<pre class="r"><code>df &lt;- read_csv(here(&quot;/data/frame.csv&quot;))</code></pre>
 <p><br></p>
 </div>
 <div id="organizing-the-code" class="section level2">
@@ -357,7 +360,7 @@ $(document).ready(function () {
 <p><br></p>
 </div>
 <div id="finding-and-understanding-your-data-is-most-of-the-battle" class="section level2">
-<h2>Finding and understanding your data is most of the battle 🔍</h2>
+<h2>Finding and understanding your data is most of the battle 🔎</h2>
 <p>If you have been involved with data science for at least a little while, you’ve probably heard an estimate that 80% of your time is spent tidying data. What you may not be thinking about is that you have to actually <em>find</em> your data first. If it is in a database you’re unfamiliar with and isn’t clearly documented, it is going to take a lot of work just to get your data. For our capstone project, our first sprint goal was just to <em>get</em> the dataset that we thought we needed (which involved several queries and a few joins), and even up to a week before presenting we were still pulling in more data. In my experience, by the time you get, understand, and clean the data, the analyses feel something like an afterthought.</p>
 <p><br></p>
 </div>
@@ -373,7 +376,7 @@ $(document).ready(function () {
 <p><br></p>
 </div>
 <div id="think-about-your-presentation-medium" class="section level2">
-<h2>Think about your presentation medium 💹</h2>
+<h2>Think about your presentation medium 📉</h2>
 <p>Since hopefully everyone in data science (at least in the US) is working remotely right now, presentations are happening over a “share your screen” feature. It’s important to make sure that all of your legends, axis labels, citations, etc. are clearly legible. What we did for a lot of our graphs is instead of having categories listed on the x axis, had them represented as colors. The legend was much easier to read than the axis labels. This did mean that we were redoing visualizations the night before, but the difference was definitely worth it.</p>
 <p><br></p>
 </div>

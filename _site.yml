@@ -14,6 +14,8 @@ navbar:
       menu:
         - text: "Favorite (R) Things"
           href: favorite_things.html
+        - text: "What I Learned in Capstone"
+          href: capstone.html
 output_dir: "."
 output:
   html_document:
