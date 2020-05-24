@@ -341,15 +341,15 @@ $(document).ready(function () {
 <p>Something I wish we had done better about from the beginning was how we organized our <code>.Rmd</code>s. Based on our experience and what I wish I would have thought of in February, here are some tips for keeping a project organized.</p>
 <ol style="list-style-type: decimal">
 <li><p>Pick one document to do all the data cleaning in. If you have the same data cleaning process copied and pasted into all of the documents you need, there are bound to be inconsistencies, which will lead to some late night nit-picking of inner joins (hypothetically). This way, you can just run that script before any of your other stuff. Alternatively, if you have a better way to go about this, I’d love to hear your ideas.</p></li>
-<li><p>Make sure that the name of the document tells you exactly what is inside. Don’t just tack on something to the end of a document you are already in, start a new one. You don’t want to end up in a situation where you can’t find a case study you did because you left it at the end of the document that should just be exploratory data analysis.</p></li>
-<li><p>Comment your code. Not for yourself, but for the other people who have to read it. While it might be self-explanatory and very clear to you what you are doing, it might not be so clear to someone else! You may end up in a situation where you have to pick up where someone left off, so be kind to them and make sure it is very clear what your goal is and how you got there.</p></li>
-<li><p>Commit and push early and often. You don’t want to be the only person with critical visualizations on your computer that has just crashed. GitHub is only a tool that is as valuable as how well you use it, so do future-you a favor and make sure your work is pushed properly.</p></li>
-<li><p>Don’t just work in the console! If you are trying to figure out a problem and you’re playing around in the console, consider saving more of it in an <code>.Rmd</code> than you might think. The stuff you’re playing around with right now might really help you out later! And if it doesn’t, you can just comment it out. It’s always better to have extra code that you don’t need than to not have what you’re looking for a week from now.</p></li>
+<li><p>Make sure that the name of the document tells you exactly what is inside. Don’t just tack on something to the end of a document you are already in, start a new one. Leaving your “case study” code at the bottom of your <code>exploratory_data_analysis.Rmd</code> doesn’t help anyone. Plus, the more that work is spread out across documents, the fewer merge conflicts you’re going to run into.</p></li>
+<li><p>Comment your code. Not for yourself, but for the other people who have to read it. While it might be self-explanatory and very clear to you what you are doing, it might not be so clear to someone else! You may end up in a situation where someone else has to pick up where you left off, so be kind to them and make sure it is very clear what your goal is and how you got there.</p></li>
+<li><p>Commit and push early and often. GitHub is only a tool that is as valuable as how well you use it, so do future-you a favor and make sure your work is pushed properly.</p></li>
+<li><p>Don’t just work in the console! If you are trying to figure out a problem and you’re playing around in the console, consider saving more of it than you might think. The stuff you’re playing around with right now might really help you out later! And if it doesn’t, you can just comment it out. It’s always better to have extra code that you don’t need than to not have what you’re looking for a week from now.</p></li>
 </ol>
 <p><br></p>
 </div>
-<div id="communication" class="section level2">
-<h2>Communication</h2>
+<div id="communication-️" class="section level2">
+<h2>Communication 🗨️</h2>
 <p>As teammates, it’s important to have a structure for how you are going to communicate. If you get a question from your client, who’s responsibility is it to respond? Who has to sign off on the answers before they get sent?</p>
 <p>Also, spending a few minutes of a meeting catching up and talking about your personal lives isn’t wasting time (as long as it’s only a few minutes). Getting to know each other as a team helps you work better together.</p>
 <p><br></p>
@@ -360,7 +360,7 @@ $(document).ready(function () {
 <p><br></p>
 </div>
 <div id="finding-and-understanding-your-data-is-most-of-the-battle" class="section level2">
-<h2>Finding and understanding your data is most of the battle 🔎</h2>
+<h2>Finding and understanding your data is most of the battle 🔍</h2>
 <p>If you have been involved with data science for at least a little while, you’ve probably heard an estimate that 80% of your time is spent tidying data. What you may not be thinking about is that you have to actually <em>find</em> your data first. If it is in a database you’re unfamiliar with and isn’t clearly documented, it is going to take a lot of work just to get your data. For our capstone project, our first sprint goal was just to <em>get</em> the dataset that we thought we needed (which involved several queries and a few joins), and even up to a week before presenting we were still pulling in more data. In my experience, by the time you get, understand, and clean the data, the analyses feel something like an afterthought.</p>
 <p><br></p>
 </div>
@@ -376,7 +376,7 @@ $(document).ready(function () {
 <p><br></p>
 </div>
 <div id="think-about-your-presentation-medium" class="section level2">
-<h2>Think about your presentation medium 📉</h2>
+<h2>Think about your presentation medium 📈</h2>
 <p>Since hopefully everyone in data science (at least in the US) is working remotely right now, presentations are happening over a “share your screen” feature. It’s important to make sure that all of your legends, axis labels, citations, etc. are clearly legible. What we did for a lot of our graphs is instead of having categories listed on the x axis, had them represented as colors. The legend was much easier to read than the axis labels. This did mean that we were redoing visualizations the night before, but the difference was definitely worth it.</p>
 <p><br></p>
 </div>
