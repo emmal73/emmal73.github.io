@@ -8,7 +8,6 @@ output: html_document
 
 Emma can usually be found with a cup of tea or coffee working on her latest project in R. She is a current member of MassMutual's [Data Science and Development Program](https://datascience.massmutual.com/dsdp) in Amherst, MA. She recently graduated from Smith College, with a major in Statistical and Data Sciences and an accidental minor in Math. She is a co-author of the R package [**readUCI**](https://github.com/emmal73/readUCI).
 
-<br>
 
 She has completed coursework in advanced programming in R and advanced statistics such as structural equation modeling and actor-partner interdependence modeling. Her capstone project for the major was working with a progressive political action organization. In the fall she participated as a mentee in the Out in Tech mentorship program, and built a [shiny app](https://github.com/emmal73/emma_out_in_tech/tree/master/GBM) about gradient booster models.
 

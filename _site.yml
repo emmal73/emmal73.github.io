@@ -12,10 +12,10 @@ navbar:
           href: github_slides.html
     - text: "Blog Posts"
       menu:
-        - text: "Favorite (R) Things"
-          href: favorite_things.html
         - text: "What I Learned in Capstone"
           href: capstone.html
+        - text: "Favorite (R) Things"
+          href: favorite_things.html
 output_dir: "."
 output:
   html_document:
