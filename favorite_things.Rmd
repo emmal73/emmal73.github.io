@@ -20,11 +20,11 @@ As of August 29, 2020, this is updated with Mac shortcuts as well! Mac shortcuts
 
 ### option/ctrl and/or shift + arrow
 
-This isn't unique to RStudio, but I use it all the time. Holding down "shift" and using the arrow keys moves your cursor left or right while highlighting (if you use the up or down arrow you will highlight the whole line). Holding down "option"/"ctrl" while using the left and right arrows will jump your cursor to the beginning or end of the next word or space. 
+This isn't unique to RStudio, but I use it all the time. Holding down "shift" and using the arrow keys moves your cursor left or right while highlighting (if you use the up or down arrow you will highlight the whole line). Holding down option/ctrl while using the left and right arrows will jump your cursor to the beginning or end of the next word or space. 
 
 Using these in combination helps me select stuff really fast, and is very helpful for quick edits.
 
-ctrl + up or down arrow scrolls within the document for you. Be careful, it doesn't automatically move the cursor so I have found myself looking at one part of a script and typing in another before.
+option/ctrl + up or down arrow scrolls within the document for you. Be careful, it doesn't automatically move the cursor so I have found myself looking at one part of a script and typing in another before.
 
 
 <br> 
@@ -37,15 +37,15 @@ This is the power up version of option/ctrl + shift + arrow. cmd/alt + left or r
 
 ### option/alt (+ shift) + arrow (up and down)
 
-alt + up or down will move the line you are currently on up or down. If you have multiple lines selected, you can move them all at the same time. 
+option/alt + up or down will move the line you are currently on up or down. If you have multiple lines selected, you can move them all at the same time. 
 
-alt + shift + up or down will copy the line that you are currently in above or below it.
+option/alt + shift + up or down will copy the line that you are currently in above or below it.
 
 <br>
 
 ### option/alt cursor
 
-If you hit alt and then drag your cursor across several lines, you can create a multi-cursor. This is super helpful for if you have to make lots of the same changes across mutiple lines of code. This acts as a cursor, so you can escape this feature simply by clicking somewhere else or hitting your escape key.
+If you hit option/alt and then drag your cursor across several lines, you can create a multi-cursor. This is super helpful for if you have to make lots of the same changes across mutiple lines of code. This acts as a cursor, so you can escape this feature simply by clicking somewhere else.
 
 <br>
 
@@ -57,7 +57,7 @@ shift + tab is the opposite of tab -- it un-indents the selected lines.
 
 ### cmd/ctrl + option/alt + i
 
-This one is a game changer: ctrl + alt + i inserts a new R code chunk in a .Rmd. 
+This one is a game changer: cmd/ctrl + option/alt + i inserts a new R code chunk in a .Rmd. 
 
 <br>
 
@@ -69,7 +69,7 @@ This knits the document you are currently in.
 
 ### ctrl/ctrl + option/alt + s
 
-The big sibling to ctrl + s, saves all documents you have open.
+The big sibling to cmd/ctrl + s, saves all documents you have open.
 
 <br>
 
