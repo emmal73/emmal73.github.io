@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Those who have worked with me closely know that I am a **huge** fan of a keyboard shortcut. They are such a part of my muscle memory that I have been known to demonstrate the shortcut on a non-existant keyboard before I remember the names of the keys. So, I thought I would write up a list of the ones I use most frequently, and few that I would like to incorporate into my day-to-day use.
 
-~~Since I'm a Windows user, all of these are for Windows computers, but most if not all of them translate well to Macs.~~
+~~Since I'm a Windows user, all of these are for Windows computers, but most if not all of them translate well to Macs.~~ 
 
 As of August 29, 2020, this is updated with Mac shortcuts as well! Mac shortcuts preceed Windows shortcuts, so the shortcuts will be formatted [Mac key]/[Windows key], as well as a couple other shortcuts I've picked up recently.
 
