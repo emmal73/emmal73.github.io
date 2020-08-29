@@ -1,6 +1,6 @@
 ---
 title: "These are a Few of my Favorite (R) Things"
-date: "3/7/2020"
+date: "3/7/2020 updated 8/29/2020"
 output: html_document
 ---
 
@@ -12,28 +12,30 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Those who have worked with me closely know that I am a **huge** fan of a keyboard shortcut. They are such a part of my muscle memory that I have been known to demonstrate the shortcut on a non-existant keyboard before I remember the names of the keys. So, I thought I would write up a list of the ones I use most frequently, and few that I would like to incorporate into my day-to-day use.
 
-Since I'm a Windows user, all of these are for Windows computers, but most if not all of them translate well to Macs.
+~~Since I'm a Windows user, all of these are for Windows computers, but most if not all of them translate well to Macs.~~
 
+As of August 29, 2020, this is updated with Mac shortcuts as well! Mac shortcuts preceed Windows shortcuts, so the shortcuts will be formatted [Mac key]/[Windows key], as well as a couple other shortcuts I've picked up recently.
 
 <br>
 
-### ctrl and/or shift + arrow
+### option/ctrl and/or shift + arrow
 
-This isn't unique to RStudio, but I use it all the time. Holding down "shift" and using the arrow keys moves your cursor left or right while highlighting (if you use the up or down arrow you will highlight the whole line). Holding down "ctrl" while using the left and right arrows will jump your cursor to the beginning or end of the next word or space. 
+This isn't unique to RStudio, but I use it all the time. Holding down "shift" and using the arrow keys moves your cursor left or right while highlighting (if you use the up or down arrow you will highlight the whole line). Holding down "option"/"ctrl" while using the left and right arrows will jump your cursor to the beginning or end of the next word or space. 
 
 Using these in combination helps me select stuff really fast, and is very helpful for quick edits.
 
 ctrl + up or down arrow scrolls within the document for you. Be careful, it doesn't automatically move the cursor so I have found myself looking at one part of a script and typing in another before.
 
+
 <br> 
 
-### alt (+ shift) + arrow (left and right)
+### cmd/alt (+ shift) + arrow (left and right)
 
-This is the power up version of ctrl + shift + arrow. alt + left or right arrow takes you to the beginning or end of a line. When used in conjunction with shift (alt + shift + arrow) you efficiently select an entire line. Very useful when I change my mind completely about the code I want to write.
+This is the power up version of option/ctrl + shift + arrow. cmd/alt + left or right arrow takes you to the beginning or end of a line. When used in conjunction with shift (alt + shift + arrow) you efficiently select an entire line. Very useful when I change my mind completely about the code I want to write.
 
 <br>
 
-### alt (+ shift) + arrow (up and down)
+### option/alt (+ shift) + arrow (up and down)
 
 alt + up or down will move the line you are currently on up or down. If you have multiple lines selected, you can move them all at the same time. 
 
@@ -41,45 +43,63 @@ alt + shift + up or down will copy the line that you are currently in above or b
 
 <br>
 
-### alt cursor
+### option/alt cursor
 
 If you hit alt and then drag your cursor across several lines, you can create a multi-cursor. This is super helpful for if you have to make lots of the same changes across mutiple lines of code. This acts as a cursor, so you can escape this feature simply by clicking somewhere else or hitting your escape key.
 
 <br>
 
-### ctrl + alt + i
+### shift + tab
+
+shift + tab is the opposite of tab -- it un-indents the selected lines.
+
+<br>
+
+### cmd/ctrl + option/alt + i
 
 This one is a game changer: ctrl + alt + i inserts a new R code chunk in a .Rmd. 
 
 <br>
 
-### ctrl + shift + k
+### cmd/ctrl + shift + k
 
 This knits the document you are currently in.
 
 <br>
 
-### ctrl + alt + s
+### ctrl/ctrl + option/alt + s
 
 The big sibling to ctrl + s, saves all documents you have open.
 
 <br>
 
-### ctrl + shift + c
+### cmd/ctrl + shift + c
 
 In an R chunk, this shortcut will comment out everything that you have highlighted. It isn't time efficient if you are only commenting out one line, but it is very helpful if there are several lines you're trying to comment out at the same time.
 
 <br>
 
-### ctrl + l
+### ctrl/ctrl + l
 
-If you are in the console, ctrl + l clears out the console. This doesn't technically do that much, but it does clean things up a bit. 
+If you are in the console, ctrl/ctrl + l clears out the console. This doesn't technically do that much, but it does clean things up a bit. 
 
 <br>
 
-### ctrl + shift + z
+### cmd/ctrl + shift + z
 
-ctrl + shift + z acts as a "redo". Thinking about "undo" and "redo" while coding is tricky because once you have run code you can't really undo the work with a shortcut, but ctrl + z and ctrl + shift + z are helpful for what you are writing. Just be aware that it doesn't make changes to objects that you have created or edited, just the text/code you have written. 
+cmd/ctrl + shift + z acts as a "redo". Thinking about "undo" and "redo" while coding is tricky because once you have run code you can't really undo the work with a shortcut, but cmd/ctrl + z and cmd/ctrl + shift + z are helpful for what you are writing. Just be aware that it doesn't make changes to objects that you have created or edited, just the text/code you have written. 
+
+<br>
+
+### cmd/ctrl + shift + f
+
+cmd/ctrl + shift + f allows you to search within an entire directory. I have found this very useful when joining a project already in progress, especially that has a lot of custom functions. This allows me to see where the instances of the function are throughout the project. 
+
+<br>
+
+### cmd/ctrl + d
+
+This command deletes the entire line you are on. This is really nice because you don't have to delete additional whitespace left behind from highlighting and deleting.
 
 <br> 
 <br>
@@ -90,11 +110,11 @@ There was a summer internship I had where most of the work that was happening in
 
 <br>
 
-### ctrl + shift + /
+### cmd/ctrl + shift + /
 
-If you have a long comment, ctrl + shift + / will "reflow" it for you. This is less useful in a .Rmd code chunk I have found but still worth knowing.
+If you have a long comment, cmd/ctrl + shift + / will "reflow" it for you. This is less useful in a .Rmd code chunk I have found but still worth knowing.
 
-ctrl + shift + / will turn this: 
+cmd/ctrl + shift + / will turn this: 
 
 ```{r}
 # Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers? Where's the peck of pickled peppers Peter Piper picked?
@@ -110,7 +130,7 @@ into this:
 
 <br>
 
-### ctrl + shift + n
+### cmd/ctrl + shift + n
 
 Open a new R script. If I ever figure out how to set my own keyboard shortcuts, I'm going to create one to open a new .Rmd. But for now, if I ever need an R script, this is a quick way to go.
 
@@ -121,25 +141,38 @@ Open a new R script. If I ever figure out how to set my own keyboard shortcuts, 
 
 <br>
 
-### ctrl + 2
+### ctrl/ctrl + 2
 
 Switches your focus to the console.
 
 <br>
 
-### ctrl + 1
+### ctrl/ctrl + 1
 
 Switches your focus to the source pane. 
 
 <br>
 
-### ctrl + shift + m
+### F2
+
+F2 shows you the source code for the function where your cursor is. Also super useful for understanding custom functions written by someone else, or if you need to remember what you wrote.
+
+<br>
+
+### cmd/ctrl + shift + o
+
+Open or close the document outline. From there you can easily navigate to another part of your document. Very helpful for long documents.
+
+
+<br>
+
+### cmd/ctrl + shift + m
 
 This one I learned about after I already had %>% hard coded into my muscle memory, but it is a much smoother action than typing out the %>% by hand, and is probably less prone to typos (I can't tell you how many times I've tried to use `$>$` or `%?%`).
 
 <br>
 
-### alt + shift + k
+### option/alt + shift + k
 
 This shortcut is very meta: it brings up the window that has all of the information about keyboard shortcuts! As you can see I have barely scratched the surface in terms of how I use shortcuts.
 
@@ -153,7 +186,7 @@ This shortcut is very meta: it brings up the window that has all of the informat
 
 ### highlighting and inserting
 
-If you highlight a segment of code or text, if you then hit ', ", (, [, {, or `, the highlighted segment won't get written over and instead surrounded by the open and close of that version of that character. 
+If you highlight a segment of code or text, if you then hit ', ", (, [, {, `, *, or _ the highlighted segment won't get written over and instead surrounded by the open and close of that version of that character. 
 
 <br>
 
@@ -168,6 +201,7 @@ If this were in a full code chunk, `{r edelweiss}` this chunk would be called "e
 ### skimr package
 
 The `skimr` is how I accomplish most of my exploratory data analysis, and when I have to do a lot of data transformation, my quality checks. `skimr::skim()` quickly shows you some basic information about all of your variables: number of missings, number of completes, and for numeric variables the standard deviation, mean, quartiles, and a little histogram. 
+
 <br>
 
 ### praise package

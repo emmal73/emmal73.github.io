@@ -8,8 +8,7 @@ output: html_document
 
 ### Current
 
-- Emma is a recent graduate of the Statistical and Data Sciences major at Smith College. She will join MassMutual's Data Science Development Program in Amherst, MA starting in June.
-- At school Emma is a Stats TA and Data Assistant through the [Spinelli Center for Quantitative Learning](https://www.smith.edu/qlc/index.html).
+- Emma is currently a Junior Data Scientist at MassMutual in their Data Science Development Program, and is working towards a masters degree in computer science at UMass Amherst.
 - She is the co-author and maintainer of the [**readUCI**](https://github.com/emmal73/readUCI) R package.
 
 <br>
@@ -36,14 +35,16 @@ output: html_document
 ### Education
 #### Smith College
 ##### Sept. 2016 - May 2020, Northampton, Massachusetts
-Bachelor of Arts, Statistical and Data Sciences
+Bachelor of Arts
+Major: Statistical and Data Sciences
+Minor: Mathematics
 
 - Nominee for the 2020 Impact Awards through the [Wurtele Center for Leadership](https://www.smith.edu/about-smith/wurtele-center). 
 - 2018 winner of "Best in Group" at Five College DataFest with team A-super-NOVA. Presented a new "competitiveness index" for Indeed.com based on number of jobs, number of applications, and how long jobs have been posted by field and region.
 
-**Statistics Tutor and Data Assistant, Spring 2019 - Present**
+**Spinelli Center Stats Tutor and Data Assistant, Spring 2019 - Spring 2020**
 
-- Provide one-on-one and group tutoring in introductory level statistics classes, assist students with introductory data science concepts such as data wrangling and visualization. 
+- Provided one-on-one and group tutoring in introductory level statistics classes, assisted students with introductory data science concepts such as data wrangling and visualization. 
 
 **Smith College Glee Club Cabinet, Fall 2016 - Present**
 
